@@ -60,7 +60,7 @@ jobs:
 
       - run:
          name: Build Docker image
-         command: docker build -t mlabouardy/movies-store:$CIRCLE_SHA1 .
+         command: docker build -t nikavera11/movies-store:$CIRCLE_SHA1 .
 
       - run:
           name: Push to DockerHub
