@@ -5,7 +5,7 @@ class Database:
 
     def __init__(self):
         self.con = con = mdb.connect(os.environ.get('MYSQL_HOST',
-                'localhost'), os.environ.get('MYSQL_USER', 'root'),
+                '127.0.0.1'), os.environ.get('MYSQL_USER', 'root'),
                 os.environ.get('MYSQL_PASSWORD', 'root'),
                 os.environ.get('MYSQL_DB', 'mydb'))
 
