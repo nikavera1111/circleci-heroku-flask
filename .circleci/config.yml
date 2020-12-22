@@ -66,7 +66,7 @@ jobs:
           name: Push to DockerHub
           command: |
             docker login -u$DOCKERHUB_LOGIN -p$DOCKERHUB_PASSWORD
-            docker push mlabouardy/movies-store:$CIRCLE_SHA1
+            docker push nikavera11/movies-store:$CIRCLE_SHA1
 
       - run:
           name: Setup Heroku
